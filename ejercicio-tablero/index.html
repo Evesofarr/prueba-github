@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio tablero</title>
+</head>
+
+<body>
+    <script>
+        let numero = parseInt(prompt("Introduce un numero"));
+
+        let linea = "";
+
+
+        for (let i = 1; i <= numero; i++) {
+            for (let j = 1; j <= numero; j++) {
+
+                if ((i + j) % 2 == 0) {
+                    linea += "X";
+                } else {
+                    linea += "O";
+                }
+            } linea += "\n"
+            
+        }console.log(linea);
+    </script>
+</body>
+
+</html>
