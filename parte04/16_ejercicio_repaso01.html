@@ -22,7 +22,15 @@
 
         if (palabra.length % 2 !== 0) {
 
-            console.log("La palabra introducida es impar");
+            let mitad = palabra.length / 2;
+
+            let primeraMitadimp = palabra.substring(0, mitad).toLowerCase();
+
+            let segundaMitadimp = palabra.substring(mitad).toUpperCase();
+
+            let resultado = primeraMitadimp + segundaMitadimp;
+
+            console.log(resultado);
 
         } else {
 
