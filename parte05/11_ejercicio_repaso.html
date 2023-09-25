@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+         * Poner los nombres de los meses en un array de 12. Cuando el usuario introduce un número del 1 al 12, mostrar el nombre de ese mes en pantalla.
+         */
+
+
+        let months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+
+        let number = parseInt(prompt("Introduce un numero entre 1 y 12"));
+        
+        if (number > 12) {
+            console.log("Eso no es un numero entre 1 y 12");
+        } else {
+            console.log((months[(number - 1)]));
+        }
+    </script>
+</body>
+
+</html>
