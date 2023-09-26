@@ -21,9 +21,11 @@
 
         let suma = prompt("Indica una suma");
 
-        let num1 = suma.substring(0, 2);
+        let posicion = suma.indexOf("+");
 
-        let num2 = suma.substring(3, 5);
+        let num1 = suma.substring(0, posicion);
+
+        let num2 = suma.substring((posicion + 1), suma.length);
 
         console.log(num1 + " y " + num2);
     </script>

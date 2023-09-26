@@ -20,31 +20,15 @@
 
         let palabra = prompt("Introduce una palabra");
 
-        if (palabra.length % 2 !== 0) {
+        let mitad = palabra.length / 2;
 
-            let mitad = palabra.length / 2;
+        let primeraMitadimp = palabra.substring(0, mitad).toLowerCase();
 
-            let primeraMitadimp = palabra.substring(0, mitad).toLowerCase();
+        let segundaMitadimp = palabra.substring(mitad).toUpperCase();
 
-            let segundaMitadimp = palabra.substring(mitad).toUpperCase();
+        let resultado = primeraMitadimp + segundaMitadimp;
 
-            let resultado = primeraMitadimp + segundaMitadimp;
-
-            console.log(resultado);
-
-        } else {
-
-            let mitad = palabra.length / 2;
-
-            let primeraMitad = palabra.substring(0, mitad).toLowerCase();
-
-            let segundaMitad = palabra.substring(mitad).toUpperCase();
-
-            let resultado = primeraMitad + segundaMitad;
-
-            console.log(resultado);
-        }
-
+        console.log(resultado);
     </script>
 </body>
 
