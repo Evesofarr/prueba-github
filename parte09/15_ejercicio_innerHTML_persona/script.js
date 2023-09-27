@@ -165,8 +165,8 @@ if (personas[nombre]) {
     console.log(persona);
 
     document.querySelector("body").innerHTML = `
-    <div style:"display: flex; justify-content: center; align-items: center; height: 100vh; margin: auto;">
-        <div id="main" style: "background-color:${persona.eyeColor}>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: auto;">
+        <div id="main" style= "background-color:${persona.eyeColor}">
         <img src="${persona.picture}" alt="">
         <h1 id="titulo">${persona.name}</h1>
         <p>${persona.age}</p>
