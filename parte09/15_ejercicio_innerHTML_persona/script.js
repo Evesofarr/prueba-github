@@ -165,16 +165,17 @@ if (personas[nombre]) {
     console.log(persona);
 
     document.querySelector("body").innerHTML = `
-    <div style:"display: flex; justify-content: center; align-items: center; height: 100vh;">
-        <div id="main">
+    <div style:"display: flex; justify-content: center; align-items: center; height: 100vh; margin: auto;">
+        <div id="main" style: "background-color:${persona.eyeColor}>
         <img src="${persona.picture}" alt="">
         <h1 id="titulo">${persona.name}</h1>
-
+        <p>${persona.age}</p>
+        <p>${persona.email}</p>
+        <p>${persona.address}</p>
         </div>
     </div>
 `;
 
-}else{
-    console.log("No se quein eres");
-}
-;
+} else {
+    console.log("No se quien es, prueba de nuevo");
+};
