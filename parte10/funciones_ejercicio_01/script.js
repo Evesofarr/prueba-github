@@ -3,6 +3,5 @@ function saludo(veces) {
         console.log("hola Eve");
     }
 }
-
-saludo(3)
 saludo(5)
+saludo(3)
