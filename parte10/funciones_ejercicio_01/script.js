@@ -1,8 +1,8 @@
-
-
-function saludo(numintentos) {
-    console.log(numintentos);
-    console.log("hola");
+function saludo(veces) {
+    for (let i = 0; i < veces; i++) {
+        console.log("hola Eve");
+    }
 }
-saludo(10);
-saludo(50);
+
+saludo(3)
+saludo(5)
