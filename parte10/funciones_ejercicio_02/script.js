@@ -8,10 +8,17 @@
 
 
 function valores(num1, num2) {
-    let num1 = parseInt(prompt("Indica un numero"));
-    let num1 = parseInt(prompt("Indica un numero"));
-
-
-
-    valores = 
+    if (num1 > num2) {
+        console.log(num1 > num2)
+        console.log("el primer numero es mas grande");
+    } else {
+        console.log(num1 > num2);
+        console.log("El primer numero no es mas grande");
+    }
 }
+
+
+let numero1 = parseInt(prompt("Indica un numero"));
+let numero2 = parseInt(prompt("Indica un numero"));
+
+valores(numero1, numero2)
