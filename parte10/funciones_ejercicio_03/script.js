@@ -6,13 +6,18 @@
 
 
 function division(numA, numB) {
-
-    resultado = numA / numB
-    while (numB !== 0) {
+    if (numB !== 0) {
+        resultado = numA / numB
         alert(resultado)
     }
-
 }
-let num1 = parseInt(prompt("Escribe un numero"));
-let num2 = parseInt(prompt("Escribe un numero"));
-division(num1, num2)
+
+while (true) {
+    let num1 = parseInt(prompt("Escribe un numero "))
+    let num2 = parseInt(prompt("Escribe un numero "))
+    if (num2 !== 0) division(num1, num2)
+    else {
+        alert("Has introducido 0")
+        break;
+    }
+}
