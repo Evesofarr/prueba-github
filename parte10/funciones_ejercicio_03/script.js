@@ -21,3 +21,7 @@ while (true) {
         break;
     }
 }
+
+// do while
+/* parametros = variables
+Argumentos = Valores */
